@@ -1,0 +1,24 @@
+.container {
+  height: 100%;
+}
+
+nav {
+  background-color: transparent;
+}
+
+.showcase {
+  background-image: url(../img/background/laptop2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+}
+
+.about {
+  background-color: rgb(202, 202, 202);
+}
+
+.contact .icon a {
+  margin-right: 20px;
+}
