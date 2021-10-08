@@ -15,10 +15,74 @@ nav {
   height: 80vh;
 }
 
+.content {
+  margin-top: 0;
+  animation: to-bottom 1s ease-in-out;
+}
+
 .about {
   background-color: rgb(202, 202, 202);
 }
 
+.about .anim {
+  padding: 20px;
+  animation: 1s open ease-in-out;
+}
+
+.about .col-md .text {
+  animation: 2s hide, 1s show 1s;
+}
+
 .contact .icon a {
   margin-right: 20px;
+}
+
+.card:hover {
+  border: hidden;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.4s;
+}
+
+@keyframes to-bottom {
+  0% {
+    opacity: 0;
+    margin-top: -100px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes open {
+  0% {
+    height: 0;
+    padding: 0;
+  }
+
+  100% {
+    height: 142px;
+    padding: 20px;
+  }
+}
+
+@keyframes show {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
